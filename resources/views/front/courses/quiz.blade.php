@@ -52,7 +52,7 @@
     content: '•';
     position: absolute;
     left: 0;
-    color: #f28c38;
+    color: #06BBCC;
 }
 
 /* Answer Input */
@@ -61,7 +61,7 @@
     max-width: 400px;
     padding: 10px;
     font-size: 1rem;
-    border: 2px solid #f28c38;
+    border: 2px solid #06BBCC;
     border-radius: 5px;
     margin-top: 20px;
 }
@@ -78,7 +78,7 @@
     padding: 10px 20px;
     font-size: 1.1rem;
     color: #fff;
-    background-color: #f28c38;
+    background-color: #06BBCC;
     border: none;
     border-radius: 5px;
     cursor: pointer;

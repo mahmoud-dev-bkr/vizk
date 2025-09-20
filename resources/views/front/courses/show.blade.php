@@ -42,10 +42,10 @@
 .category-title {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #f28c38;
+    color: #06BBCC;
     margin-bottom: 10px;
     padding-left: 10px;
-    border-left: 4px solid #f28c38;
+    border-left: 4px solid #06BBCC;
 }
 
 /* Lesson Container */
@@ -53,7 +53,7 @@
     max-height: 350px;
     overflow-y: auto;
     background-color: #f9f9f9;
-    border: 2px solid #f28c38;
+    border: 2px solid #06BBCC;
     border-radius: 15px;
     padding: 15px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -83,7 +83,7 @@
     transform: translateY(-50%);
     width: 20px;
     height: 3px;
-    background-color: #f28c38;
+    background-color: #06BBCC;
 }
 
 .course-list a {
@@ -92,14 +92,14 @@
 }
 
 .course-list a:hover {
-    color: #f28c38;
+    color: #06BBCC;
     text-decoration: underline;
 }
 
 /* Course Details Box */
 .course-details-box {
     background-color: white;
-    border: 2px solid #f28c38;
+    border: 2px solid #06BBCC;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
