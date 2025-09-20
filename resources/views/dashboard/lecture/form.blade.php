@@ -29,7 +29,18 @@
                             <label for="video">
                                 {{ __('video') }}
                             </label>
-                            {!! Form::text("video", old("video", optional($resource->video)), [
+                            {!! Form::text("file", old("file", optional($resource)->file), [
+                                    'class' => 'form-control',
+                                ]) !!}
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="video">
+                                {{ __('video') }}
+                            </label>
+                            {!! Form::text("file", old("file", optional($resource)->file), [
                                     'class' => 'form-control',
                                 ]) !!}
                         </div>
