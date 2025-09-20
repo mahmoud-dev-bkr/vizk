@@ -5,13 +5,7 @@
 /* Courses Section */
 .courses-section {
     background-color: #fff; /* White background */
-}
-
-/* Course Flag */
-.course-flag {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    padding-top: 60px;
 }
 
 /* Course Title */
@@ -21,6 +15,7 @@
     color: #333;
     text-transform: capitalize;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 /* Course Text */
@@ -39,6 +34,17 @@
     margin-bottom: 1rem;
 }
 
+/* Course List Container */
+.lesson-container {
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border: 2px solid #f28c38;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
 /* Course List */
 .course-list {
     list-style: none;
@@ -48,7 +54,7 @@
 
 .course-list li {
     position: relative;
-    padding-left: 30px; /* Space for the custom bullet */
+    padding-left: 30px;
     font-size: 1rem;
     color: #666;
     line-height: 1.6;
@@ -63,16 +69,27 @@
     transform: translateY(-50%);
     width: 20px;
     height: 3px;
-    background-color: #f28c38; /* Orange bullet */
+    background-color: #f28c38;
+}
+
+.course-list a {
+    color: #666;
+    text-decoration: none;
+}
+
+.course-list a:hover {
+    color: #f28c38;
+    text-decoration: underline;
 }
 
 /* Course Details Box */
 .course-details-box {
-    background-color: white; /* Light gray background */
-    border: 2px solid #f28c38; /* Orange border */
-    border-radius: 15px; /* Rounded corners */
+    background-color: white;
+    border: 2px solid #f28c38;
+    border-radius: 15px;
     padding: 20px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 /* Course Detail Item */
@@ -84,6 +101,17 @@
 
 .course-detail-item strong {
     color: #333;
+}
+
+/* Video Container */
+.video-container {
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 600px; /* Increased from 400px to 600px */
+    border: none;
 }
 
 /* Responsive Adjustments */
@@ -114,9 +142,12 @@
         font-size: 0.9rem;
     }
 
-    .course-flag {
-        width: 50px;
-        height: 35px;
+    .video-container iframe {
+        height: 400px; /* Adjusted for smaller screens */
+    }
+
+    .lesson-container {
+        max-height: 300px;
     }
 }
 
@@ -147,12 +178,14 @@
         font-size: 0.85rem;
     }
 
-    .course-flag {
-        width: 40px;
-        height: 25px;
+    .video-container iframe {
+        height: 300px; /* Adjusted for smaller screens */
+    }
+
+    .lesson-container {
+        max-height: 250px;
     }
 }
-
 </style>
 
 @endsection
@@ -161,12 +194,60 @@
 <!-- Courses Section -->
 <section class="courses-section py-5">
     <div class="container">
-        
+        <h1 class="course-title">Grammar</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/QXVzmzhxWWc" title="Introduction to Grammar" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="course-details-box">
+                    <div class="course-detail-item"><strong>Course:</strong> Grammar</div>
+                    <div class="course-detail-item"><strong>Lesson:</strong> Introduction to Grammar</div>
+                    <div class="course-detail-item"><strong>Duration:</strong> 2:45</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3 class="course-subtitle">Other Lessons</h3>
+                <div class="lesson-container">
+                    <ul class="course-list">
+                        <li><a href="#">Introduction to Grammar | 2:46</a></li>
+                        <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
+                        <li><a href="#">Introduction to Singular and Plural Nouns | 4:35</a></li>
+                        <li><a href="#">Irregular Plural Nouns I | 2:34</a></li>
+                        <li><a href="#">Irregular Plural Nouns II | 3:23</a></li>
+                        <li><a href="#">Irregular Plural Nouns | Base | 5:07</a></li>
+                        <li><a href="#">Introduction to Grammar | 2:46</a></li>
+                        <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
+                        <li><a href="#">Introduction to Singular and Plural Nouns | 4:35</a></li>
+                        <li><a href="#">Irregular Plural Nouns I | 2:34</a></li>
+                        <li><a href="#">Irregular Plural Nouns II | 3:23</a></li>
+                        <li><a href="#">Irregular Plural Nouns | Base | 5:07</a></li>
+                        <li><a href="#">Introduction to Grammar | 2:46</a></li>
+                        <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
+                        <li><a href="#">Introduction to Singular and Plural Nouns | 4:35</a></li>
+                        <li><a href="#">Irregular Plural Nouns I | 2:34</a></li>
+                        <li><a href="#">Irregular Plural Nouns II | 3:23</a></li>
+                        <li><a href="#">Irregular Plural Nouns | Base | 5:07</a></li>
+                        <li><a href="#">Introduction to Grammar | 2:46</a></li>
+                        <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
+                        <li><a href="#">Introduction to Singular and Plural Nouns | 4:35</a></li>
+                        <li><a href="#">Irregular Plural Nouns I | 2:34</a></li>
+                        <li><a href="#">Irregular Plural Nouns II | 3:23</a></li>
+                        <li><a href="#">Irregular Plural Nouns | Base | 5:07</a></li>
+                        <li><a href="#">Introduction to Grammar | 2:46</a></li>
+                        <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
+                        <li><a href="#">Introduction to Singular and Plural Nouns | 4:35</a></li>
+                        <li><a href="#">Irregular Plural Nouns I | 2:34</a></li>
+                        <li><a href="#">Irregular Plural Nouns II | 3:23</a></li>
+                        <li><a href="#">Irregular Plural Nouns | Base | 5:07</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 @endsection
-
 @section('js')
 
 @endsection
