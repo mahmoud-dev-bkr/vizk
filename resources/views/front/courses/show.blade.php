@@ -161,49 +161,10 @@
 <!-- Courses Section -->
 <section class="courses-section py-5">
     <div class="container">
-        <div class="row">
-            <!-- Left Side: Flag and Text -->
-            <div class="col-md-8">
-                <div class="col-4 d-flex align-items-center mb-3">
-                    <img src="{{ asset($course->image) }}" alt="UK Flag" class="course-flag me-3 wow bounceInUp">
-                </div>
-                <p class="course-text">
-                    {!!  $course->description !!}
-                </p>
-                <h3 class="course-subtitle mt-4">{{ __('So what do you learn in the course?') }}</h3>
-                <ul class="course-list">
-                    <li>{{ __('the alphabet') }}</li>
-                    <li>{{ __('Score') }}</li>
-                    <li>{{ __('Numbers') }}</li>
-                    <li>{{ __('sentence assembly') }}</li>
-                    <li>{{ __('Syntax rules') }}</li>
-                    <li>{{ __('Understanding idioms and idioms') }}</li>
-                </ul>
-            </div>
-            <!-- Right Side: Course Details -->
-            <div class="col-md-4">
-                <h2 class="course-title animate__animated  animate__backInRight">{{ $course->title }}</h2>
-                <div class="course-details-box p-4">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="course-detail-item"><strong>{{ __('Sunday, Wednesday, Friday') }}</strong></p>
-                            <p class="course-detail-item"><strong>{{ __('ages') }}</strong></p>
-                            <p class="course-detail-item"><strong>{{ __('group size') }}</strong></p>
-                            <p class="course-detail-item"><strong>{{ __('course duration') }}</strong></p>
-                        </div>
-                        <div class="col-6 text-end">
-                            <p class="course-detail-item"><strong>{{ __('15:00-17:00') }}</strong></p>
-                            <p class="course-detail-item"><strong>{{ __('9-14 years') }}</strong></p>
-                            <p class="course-detail-item"><strong>{{ __('20-30 kids') }}</strong></p>
-                            <p class="course-detail-item"><strong>{{ __('25 hours') }}</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </section>
-@include('front.layouts.contactUs')
+
 @endsection
 
 @section('js')
