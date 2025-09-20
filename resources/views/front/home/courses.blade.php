@@ -17,6 +17,8 @@
                                 style="border-radius: 30px 0 0 30px;">Quiz</a>
                             <a href="{{ route('front.courses.show', $item->id) }}" class="flex-shrink-0 btn btn-sm btn-primary px-3"
                                 style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            <a href="{{ route('front.courses.chat', $item->id) }}" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                style="border-radius: 0 30px 30px 0;">Chat</a>
                         </div>
                     </div>
                     <div class="text-center p-4 pb-0">
