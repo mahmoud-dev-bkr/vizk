@@ -42,9 +42,9 @@ class CourseController extends Controller
         return back()->with('success', 'Request Sent Successfully');
     }
 
-    public function quize()
+    public function quiz()
     {
-        return view('front.courses.quize');
+        return view('front.courses.quiz');
     }
 
 }

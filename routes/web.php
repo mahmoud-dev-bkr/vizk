@@ -29,6 +29,7 @@ Route::get('/contact', 'ContactController@index')->name('front.contact');
 
 Route::get('/course', 'CourseController@index')->name('front.courses');
 Route::get('/course/show/{id}', 'CourseController@show')->name('front.courses.show');
+Route::get('/course/quiz/{id}', 'CourseController@quiz')->name('front.courses.quiz');
 
 // request of the course 
 Route::post('/course', 'CourseController@UserRequest')->name('front.courses.request');
