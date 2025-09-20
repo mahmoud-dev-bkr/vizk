@@ -47,4 +47,9 @@ class CourseController extends Controller
         return view('front.courses.quiz');
     }
 
+    public function chats()
+    {
+        return view('front.courses.chats');
+    }
+
 }

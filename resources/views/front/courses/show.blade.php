@@ -224,7 +224,6 @@
                 </div>
                 <div class="course-details-box">
                     <div class="course-detail-item"><strong>Course:</strong> Grammar</div>
-                    <div class="course-detail-item"><strong>Lesson:</strong> Introduction to Grammar</div>
                     <div class="course-detail-item"><strong>Duration:</strong> 2:45</div>
                 </div>
             </div>
@@ -234,24 +233,24 @@
                     <div class="category-container">
                         <h4 class="category-title">Basics</h4>
                         <ul class="course-list">
-                            <li><a href="#">Introduction to Grammar | 2:46</a></li>
-                            <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
+                            <li><a href="#">Introduction to Grammar </a></li>
+                            <li><a href="#">Parts of Speech | Grammar </a></li>
                         </ul>
                     </div>
                     <div class="category-container">
                         <h4 class="category-title">Nouns</h4>
                         <ul class="course-list">
-                            <li><a href="#">Introduction to Singular and Plural Nouns | 4:35</a></li>
-                            <li><a href="#">Irregular Plural Nouns I | 2:34</a></li>
-                            <li><a href="#">Irregular Plural Nouns II | 3:23</a></li>
-                            <li><a href="#">Irregular Plural Nouns | Base | 5:07</a></li>
+                            <li><a href="#">Introduction to Singular and Plural Nouns </a></li>
+                            <li><a href="#">Irregular Plural Nouns I </a></li>
+                            <li><a href="#">Irregular Plural Nouns II </a></li>
+                            <li><a href="#">Irregular Plural Nouns | Base </a></li>
                         </ul>
                     </div>
                     <div class="category-container">
                         <h4 class="category-title">Basics</h4>
                         <ul class="course-list">
-                            <li><a href="#">Introduction to Grammar | 2:46</a></li>
-                            <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
+                            <li><a href="#">Introduction to Grammar </a></li>
+                            <li><a href="#">Parts of Speech | Grammar </a></li>
                         </ul>
                     </div>
                 </div>
