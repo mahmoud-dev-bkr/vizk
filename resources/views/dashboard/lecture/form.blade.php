@@ -37,24 +37,31 @@
                     <div class="clearfix"></div>
                     <div class="col-12">
                         <div class="form-group">
-                            <label for="video">
-                                {{ __('video') }}
+                            <label for="type">
+                                {{ __('type') }}
                             </label>
-                            {!! Form::text("file", old("file", optional($resource)->file), [
-                                    'class' => 'form-control',
-                                ]) !!}
+                            {{-- select box video or image --}}
+                            <select name="type" id="type" class="form-control">
+                                <option value="video" {{ $resource->type == 'video' ? 'selected' : '' }}>
+                                    {{ __('video') }}
+                                </option>
+
+                                <option value="image" {{ $resource->type == 'image' ? 'selected' : '' }}>
+                                    {{ __('image') }}
+                                </option>                                
+                            </select>
                         </div>
                     </div>
                     <div class="clearfix"></div>
                     {{-- lesson_id --}}
                     <div class="col-12">
                         <div class="form-group">
-                            <label for="lesson_id">
+                            <label for="lisson_id">
                                 {{ __('lesson') }}
                             </label>
-                            <select name="lesson_id" id="" class="form-control">
+                            <select name="lisson_id" id="" class="form-control">
                                 @foreach ($lessons as $lesson  )
-                                    <option value="{{ $lesson->id }}" {{ $resource->lesson_id == $lesson->id ? 'selected' : '' }}>{{ $lesson->title }}</option>                                    
+                                    <option value="{{ $lesson->id }}" {{ $resource->lisson_id == $lesson->id ? 'selected' : '' }}>{{ $lesson->title }}</option>                                    
                                 @endforeach
                             </select>
                         </div>
@@ -74,7 +81,7 @@
                     @endforeach
                     {{-- age and lecture_duration and group_size --}}
                     
-                    @foreach (config('translatable.locales') as $key => $locale)
+                    {{-- @foreach (config('translatable.locales') as $key => $locale)
                         <div class="col-md-6 pt-2">
                             <div class="form-group">
                                 <label for="name">
@@ -89,7 +96,7 @@
                                 ) !!}
                             </div>
                         </div>
-                    @endforeach
+                    @endforeach --}}
 
                 </div>
                 <div class="pt-4">

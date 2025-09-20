@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Dashboard;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Dashboard\StoreLecture;
 use App\Models\Lecture;
+use App\Models\Lesson;
 use Illuminate\Http\Request;
 
 class LectureController extends Controller
@@ -47,6 +48,7 @@ class LectureController extends Controller
     {
         $inputs = $request->validated();
         // dd($inputs);
+        $inputs['course_id'] = Lesson::find($inputs['lisson_id'])->course_id;
         $this->model->create($inputs);
         toast(__('created') , 'success');
         return redirect()->route('admin.lecture');
@@ -62,6 +64,7 @@ class LectureController extends Controller
     {
         return view('dashboard.lecture.form' ,[
             'resource' => $this->model->findOrFail($id),
+            'lessons' => \App\Models\Lesson::get(),
         ]);
     }
 

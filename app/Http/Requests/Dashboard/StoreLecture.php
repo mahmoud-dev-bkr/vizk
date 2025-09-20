@@ -30,9 +30,9 @@ class StoreLecture extends FormRequest
             $inputs[$locale . '.title'] = ['nullable', 'string', 'max:255'];
             // $inputs[$locale . '.description'] = ['nullable', 'string'];
         }
-        $inputs['lesson_id'] = ['required', 'exists:lessons,id'];
+        $inputs['lisson_id'] = ['required', 'exists:lessons,id'];
         // file 
-        $inputs['file'] = ['nullable', 'file'];
+        $inputs['file'] = ['nullable', 'string'];
         return $inputs;
     }
 }

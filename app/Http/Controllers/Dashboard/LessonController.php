@@ -62,6 +62,7 @@ class LessonController extends Controller
     {
         return view('dashboard.lesson.form' ,[
             'resource' => $this->model->findOrFail($id),
+            'courses' => \App\Models\Course::get(),
         ]);
     }
 
