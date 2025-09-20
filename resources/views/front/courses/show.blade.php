@@ -34,9 +34,23 @@
     margin-bottom: 1rem;
 }
 
-/* Course List Container */
+/* Category Container */
+.category-container {
+    margin-bottom: 20px;
+}
+
+.category-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f28c38;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #f28c38;
+}
+
+/* Lesson Container */
 .lesson-container {
-    max-height: 400px;
+    max-height: 350px;
     overflow-y: auto;
     background-color: #f9f9f9;
     border: 2px solid #f28c38;
@@ -147,7 +161,11 @@
     }
 
     .lesson-container {
-        max-height: 300px;
+        max-height: 250px;
+    }
+
+    .category-title {
+        font-size: 1.1rem;
     }
 }
 
@@ -183,7 +201,11 @@
     }
 
     .lesson-container {
-        max-height: 250px;
+        max-height: 200px;
+    }
+
+    .category-title {
+        font-size: 1rem;
     }
 }
 </style>
@@ -209,38 +231,29 @@
             <div class="col-md-4">
                 <h3 class="course-subtitle">Other Lessons</h3>
                 <div class="lesson-container">
-                    <ul class="course-list">
-                        <li><a href="#">Introduction to Grammar | 2:46</a></li>
-                        <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
-                        <li><a href="#">Introduction to Singular and Plural Nouns | 4:35</a></li>
-                        <li><a href="#">Irregular Plural Nouns I | 2:34</a></li>
-                        <li><a href="#">Irregular Plural Nouns II | 3:23</a></li>
-                        <li><a href="#">Irregular Plural Nouns | Base | 5:07</a></li>
-                        <li><a href="#">Introduction to Grammar | 2:46</a></li>
-                        <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
-                        <li><a href="#">Introduction to Singular and Plural Nouns | 4:35</a></li>
-                        <li><a href="#">Irregular Plural Nouns I | 2:34</a></li>
-                        <li><a href="#">Irregular Plural Nouns II | 3:23</a></li>
-                        <li><a href="#">Irregular Plural Nouns | Base | 5:07</a></li>
-                        <li><a href="#">Introduction to Grammar | 2:46</a></li>
-                        <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
-                        <li><a href="#">Introduction to Singular and Plural Nouns | 4:35</a></li>
-                        <li><a href="#">Irregular Plural Nouns I | 2:34</a></li>
-                        <li><a href="#">Irregular Plural Nouns II | 3:23</a></li>
-                        <li><a href="#">Irregular Plural Nouns | Base | 5:07</a></li>
-                        <li><a href="#">Introduction to Grammar | 2:46</a></li>
-                        <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
-                        <li><a href="#">Introduction to Singular and Plural Nouns | 4:35</a></li>
-                        <li><a href="#">Irregular Plural Nouns I | 2:34</a></li>
-                        <li><a href="#">Irregular Plural Nouns II | 3:23</a></li>
-                        <li><a href="#">Irregular Plural Nouns | Base | 5:07</a></li>
-                        <li><a href="#">Introduction to Grammar | 2:46</a></li>
-                        <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
-                        <li><a href="#">Introduction to Singular and Plural Nouns | 4:35</a></li>
-                        <li><a href="#">Irregular Plural Nouns I | 2:34</a></li>
-                        <li><a href="#">Irregular Plural Nouns II | 3:23</a></li>
-                        <li><a href="#">Irregular Plural Nouns | Base | 5:07</a></li>
-                    </ul>
+                    <div class="category-container">
+                        <h4 class="category-title">Basics</h4>
+                        <ul class="course-list">
+                            <li><a href="#">Introduction to Grammar | 2:46</a></li>
+                            <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
+                        </ul>
+                    </div>
+                    <div class="category-container">
+                        <h4 class="category-title">Nouns</h4>
+                        <ul class="course-list">
+                            <li><a href="#">Introduction to Singular and Plural Nouns | 4:35</a></li>
+                            <li><a href="#">Irregular Plural Nouns I | 2:34</a></li>
+                            <li><a href="#">Irregular Plural Nouns II | 3:23</a></li>
+                            <li><a href="#">Irregular Plural Nouns | Base | 5:07</a></li>
+                        </ul>
+                    </div>
+                    <div class="category-container">
+                        <h4 class="category-title">Basics</h4>
+                        <ul class="course-list">
+                            <li><a href="#">Introduction to Grammar | 2:46</a></li>
+                            <li><a href="#">Parts of Speech | Grammar | 4:28</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
