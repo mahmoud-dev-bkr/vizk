@@ -33,7 +33,7 @@ class LectureController extends Controller
     {
         return view('dashboard.lecture.form' ,[
             'resource' => $this->model,
-            'courses' => \App\Models\Course::get(),
+            'lessons' => \App\Models\Lesson::get(),
         ]);
     }
 
